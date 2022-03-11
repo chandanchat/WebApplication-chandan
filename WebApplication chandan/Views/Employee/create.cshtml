@@ -1,0 +1,30 @@
+﻿@model WebApplication_chandan.Models.Employee
+@*
+
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@using (Html.BeginForm("create", "Employee", FormMethod.Post))
+{
+    <table>
+        <tr>
+            <td>Enter the your name</td>
+            <td>@Html.TextBoxFor(m => m.name)</td>
+        </tr>
+        <tr>
+            <td>Enter the your age</td>
+            <td>@Html.TextBoxFor(a => a.name)</td>
+        </tr>
+        <tr>
+            <td>Enter the your mobile</td>
+            <td>@Html.TextBoxFor(a => a.name)</td>
+        </tr>
+        <tr>
+        <td colspan="3"><input type ="submit"value="save"/></td>
+            </tr>
+        
+    </table>
+}
+
+
